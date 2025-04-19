@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+form.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+form.buttons h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+form input[type="text"] {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 1rem;
+}
+
+form .join {
+  display: flex;
+  gap: 0.5rem;
+}
+
+form .join input {
+  flex: 2;
+}
+
+form .join button,
+form .create-btn {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  background-color: #f169c4;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form .create-btn {
+  width: 100%;
+}
+
+form .join button:hover,
+form .create-btn:hover {
+  background-color: #f169c4;
+}
+
+ul {
+  color: red;
+  font-size: 0.9rem;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.message-box h2 {
+  text-align: center;
+  margin: 0;
+  padding: 1rem;
+  background-color: #f169c4;
+  color: white;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #f9fafb;
+}
+
+.inputs {
+  display: flex;
+  border-top: 1px solid #ddd;
+  padding: 0.5rem;
+  background-color: #fff;
+}
+
+.inputs input {
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.inputs button {
+  margin-left: 0.5rem;
+  padding: 0.6rem 1rem;
+  background-color: #f169c4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.inputs button:hover {
+  background-color: #f169c4;
+}
+
+.text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 0.6rem;
+  border-radius: 6px;
+}
+
+.muted {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .message-box {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  form.buttons {
+    padding: 1.5rem;
+    width: 100%;
+    margin: 1rem;
+  }
+
+  form .join {
+    flex-direction: column;
+  }
+
+  form .join input,
+  form .join button {
+    width: 100%;
+  }
+
+  .inputs button {
+    padding: 0.6rem;
+  }
+}
+
+
+body.dark {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+}
+
+body.dark .message-box {
+  background-color: #2c2c3e;
+  color: white;
+}
+
+body.dark .messages {
+  background-color: #1e1e2f;
+}
+
+body.dark .inputs {
+  background-color: #2c2c3e;
+}
+
+body.dark input,
+body.dark button {
+  background-color: #444;
+  color: white;
+  border: 1px solid #666;
+}
+
+body.dark .text {
+  background-color: #3a3a4f;
+}
+
+body.dark .muted {
+  color: #ccc;
+}
